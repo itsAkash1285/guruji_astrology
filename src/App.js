@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Chackra, Footer, Header, Testimonial, UserReview } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Testimonial />
+      <img
+        alt="down-elem"
+        src="https://user-images.githubusercontent.com/99132893/232769589-1f16f5d6-9afc-4b73-953b-d2cbaa56f08c.jpg"
+      />
+      <Chackra />
+      <UserReview />
+      <img
+        alt="down-elem"
+        src="https://user-images.githubusercontent.com/99132893/233254741-aec43ffb-0cff-49f1-a426-db62aa55d87f.jpg"
+      />
+      <Footer/>
     </div>
   );
 }
